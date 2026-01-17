@@ -22,15 +22,11 @@
     }
 
     .container {
-      max-width: 200px;
+      max-width: 40%;
+      margin: 40px auto;
       background-color: white;
-      margin-top: 220px;
-      margin-bottom: 220px;
-      margin-left: 450px;
-      margin-right: 500px;
       text-align: center;
-      padding-top: 10px;
-      padding-bottom: 90px;
+      padding: 50px 10px;
       border-radius: 8px;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     }
@@ -42,6 +38,7 @@
     }
 
     .sub-heading {
+      margin-bottom: 5px ;
       font-size: 15px;
       text-align: left;
       margin-left: 40px;
@@ -49,7 +46,7 @@
 
     span {
       font-size: 10px;
-      margin-left: 240px;
+      margin-left: 340px;
       color: #374151;
     }
 
@@ -63,19 +60,34 @@
       color: #3B82C4;
     }
 
+    input {
+      font-family: 'Inter',sans-serif;
+      border-width: 1px;
+      border-style: solid;
+      border-color: rgb(200, 200, 200);
+      font-size: 16px;
+      border-radius: 8px;
+      padding-left: 10px;
+      padding-right: 300px; 
+      padding-bottom: 5px;
+      padding-top: 5px;
+      text-align: start;
+      margin-left: -1px;
+    }
+
     button {
       color: white;
       background-color: #3B82C4;
       border: none;
-      border-radius: 2px;
+      border-radius: 8px;
       cursor: pointer;
       font-weight: bold;
-      padding-left: 10px;
-      padding-right: 10px;
-      padding-bottom: 5px;
-      padding-top: 5px;
+      padding-left: 245px;
+      padding-right: 245px;
+      padding-bottom: 10px;
+      padding-top: 10px;
       transition: opacity 0.15s;
-      margin-top: 10px;
+      margin-top: 20px;
     }
 
     button:hover {
@@ -90,12 +102,13 @@
 
 <body>
   <div class="container">
-    <h2>Welcome to SRMS!</h2>
+    <h2 style="margin-top: -10px;">Welcome to SRMS!</h2>
     <p>please log in to continue</p>
     <h4 class="sub-heading">Email or Username</h4>
-    textbox
+    <input type="text">
     <h4 class="sub-heading">Password <span>Forgot Password?</span></h4>
-    textbox
+    <input type="password">
+    <br>
     <button>Login</button>
   </div>
 </body>
