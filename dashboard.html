@@ -24,6 +24,7 @@
     background-color: #3B82C4;
     margin: 0;
     padding: 30px;
+    width: 100%;
   }
 
   h4 {
@@ -37,36 +38,31 @@
 
   .dashboard-title {
     font-size: 25px;
-    padding-left: 10px;
+    padding-left: 50px;
   }
 
   .welcome-text {
-    padding-left: 10px;
+    padding-left: 100px;
   }
 
   .cards {
-    
     font-family: 'Poppins', sans-serif;
     padding-left: 10px;
-    
-
-
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+    margin-left: 0;
   }
 
-  .total-student {
-    /* width: 50px; */
-    /* max-width: 100px; */
-    /* margin: 200px auto; */
+  .container {
+    width: 80%;
+    max-width: 400px;
     background-color: white;
-    /* text-align: center; */
-    padding: 30px 20px;
+    padding: 40px 30px;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   }
-
-  .total-reports {}
-
-  .pending-reports {}
 </style>
 
 <body>
@@ -76,9 +72,9 @@
     <p class="welcome-text">Welcome back, User!</p>
   </div>
   <div class="cards">
-    <div class="total-students"><b>Total Students:</b></div>
-    <div class="total-reports"><b>Total Reports:</b></div>
-    <div class="pending-reports"><b>Pending Reports:</b></div>
+    <div class="container"><b>Total Students:</b></div>
+    <div class="container"><b>Total Reports:</b></div>
+    <div class="container"><b>Pending Reports:</b></div>
   </div>
 </body>
 
